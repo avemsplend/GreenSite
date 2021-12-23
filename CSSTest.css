@@ -9,7 +9,7 @@ body {
     width: 100%;
     padding-left: 8%;
     padding-right: 8%;
-    font-family: sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-style: normal;
     font-weight: normal;
 }
@@ -20,10 +20,7 @@ h1 {
     color: rgb(0,0,0);
 }
 
-h2 {
-    margin-top: 1em;
-    margin-bottom: 1em;
-}
+h2 {line-height: 160%;}
 
 img {width: 100%;}
 
@@ -73,8 +70,12 @@ input::placeholder{color: #A3A6A9;}
         margin-top: 1.5em;
     }
 
-    .mainInf {width: 40%;}
-    .inform {width: 60%;}
+    .mainInf {
+        width: 40%;
+        word-break: break-word;
+    }
+
+    .inform {width: 57%;}
 
     .mainInf > div {margin-top: 3.5em;}
 
@@ -90,6 +91,10 @@ input::placeholder{color: #A3A6A9;}
 
     .send {width: 40%;}
     .connect {width: 50%;}
+    .phone p {
+        font-size: 2em;
+        line-height: 200%;
+    }
 
     footer {height: 10em;}
 }
@@ -130,7 +135,14 @@ input::placeholder{color: #A3A6A9;}
 
     .request {flex-direction: column;}
 
-    .connect {margin-top: 2em;}
+    .connect {
+        margin-top: 2em;
+        width: 85%;
+    }
+    .phone p {
+        font-size: 1.3em;
+        line-height: 109%;
+    }
 
     footer {height: 5.9em;}
 }
@@ -154,10 +166,12 @@ input::placeholder{color: #A3A6A9;}
     padding: 1.25em;
 }
 
+.mainInf a {color: #545454;}
+
 .inform {
     line-height: 140%;
     padding: 1.25em;
-    
+    font-family: 'Roboto', sans-serif;
 }
 
 .inform p {margin-top: 2%;}
@@ -204,13 +218,17 @@ input::placeholder{color: #A3A6A9;}
     font-size: 1em;
 }
 
+.phone p {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
 .phrase {
     margin-top: 2.5em;
     font-size: 0.87em;
 }
 
 .phone {
-    line-height: 200%;
-    margin-top: 4.5em;
-    margin-bottom: 4.5em;
+    margin-top: 15%;
+    margin-bottom: 15%;
 }
