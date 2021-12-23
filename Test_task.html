@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Our vacancies">
     <link rel="stylesheet" href="CSSTest.css">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic|Playfair+Display:400,700&subset=latin,cyrillic">
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -32,8 +32,8 @@
             </select></p>
         </div>
         <div>
-            <label>Position</label>
-            <p><input type = "text" placeholder = "Unspecified"></p>
+            <label for="position">Position</label>
+            <p><input type = "text" id="posirion" name="vacancy_position" placeholder = "Unspecified"></p>
         </div>
         <button>Clear sorting<span>&#10006</span></button>
 </div>
@@ -43,10 +43,10 @@
         <div class = "mainInf">
             <img src = "image 1.png">
             <div>
-                <p><font color = "#545454">Form:</font> Full time</p>
-                <p><font color = "#545454">Company:</font> SoloProtect</p>
-                <p><font color = "#545454">Web:</font> https://www.soloprotect.com/uk/</p>
-                <p>Address: United Kingdom</p>
+                <p><a>Form:</a> Full time</p>
+                <p><a>Company:</a> SoloProtect</p>
+                <p><a>Web:</a> https://www.soloprotect.com/uk/</p>
+                <p><a>Address:</a> United Kingdom</p>
             </div>
         </div>
         <div class = "inform">
@@ -78,10 +78,10 @@
         <div class = "mainInf">
             <img src = "image2.png">
             <div>
-                <p><font color = "#545454">Form:</font> Half time</p>
-                <p><font color = "#545454">Company:</font> Phantasma Labs</p>
-                <p><font color = "#545454">Web:</font> https://phantasma.global/</p>
-                <p>Address: United Kingdom</p>
+                <p><a>Form:</a> Half time</p>
+                <p><a>Company:</a> Phantasma Labs</p>
+                <p><a>Web:</a> https://phantasma.global/</p>
+                <p><a>Address:</a> United Kingdom</p>
             </div>
         </div>
         <div class = "inform">
@@ -103,7 +103,7 @@
                 </ul>
             </div>
             <div class="gradient">
-                <button class="expand-button" onclick="open_vacancy(this)">more details</button>
+                <button>more details</button>
             </div>
         </div>
     </div>
@@ -113,10 +113,10 @@
         <div class = "mainInf">
             <img src = "image3.png">
             <div>
-                <p><font color = "#545454">Form:</font> Part time</p>
-                <p><font color = "#545454">Company:</font> LawPilots</p>
-                <p><font color = "#545454">Web:</font> https://www.lawpilots.com/de-de/</p>
-                <p>Address: Berlin</p>
+                <p><a>Form:</a> Part time</p>
+                <p><a>Company:</a> LawPilots</p>
+                <p><a>Web:</a> https://www.lawpilots.com/de-de/</p>
+                <p><a>Address:</a> Berlin</p>
             </div>
         </div>
         <div class = "inform">
@@ -161,23 +161,23 @@
                 <p><input type="email" id="mail" name="user_mail" placeholder = "ivanov@mail.ru"></p>
             </div>
             <div>
-                <label>Phone number</label>
-                <p><input type="text" placeholder = "+7 (999) 123-45-78"></p>
+                <label for="phone-number">Phone number</label>
+                <p><input type="text" id="phone-number" name="user_number" placeholder = "+7 (999) 123-45-78"></p>
             </div>
             <div>
-                <label>Comment</label>
-                <p><input type="text" placeholder = "Message text"></p>
+                <label for="comment">Comment</label>
+                <p><input type="text" id="comment" name="user_comment" placeholder = "Message text"></p>
             </div>
             <button>Send</button>
-            <p class="phrase">By clicking "Send" you confirm your consent to the <font style = "border-bottom: 1px dashed black">processing of personal data</font></p>
+            <p class="phrase">By clicking "Send" you confirm your consent to the <a style = "border-bottom: 1px dashed black">processing of personal data</a></p>
         </form>
         
     
         <div class = "connect">
             <p>We will advise you and help you start a new project</p>
             <div class = "phone">
-                <h2>+7 499 391-66-69</h2>
-                <h2>mail@greensight.ru</h2>
+                <p>+7 499 391-66-69</p>
+                <p>mail@greensight.ru</p>
             </div>
             <p>Moscow, Zelenograd, Central Ave.,<br/>bldg. 305, 3rd floor</p>
             <p>How to get there?</p>
